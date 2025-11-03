@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anaeee & Abdi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Modern minimalistic CSS with pink/purple theme */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f3e5f5 0%, #fce4ec 100%); /* Subtle pink/purple gradient */
+            color: #4a148c; /* Deep purple for text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #e91e63; /* Pink accent */
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin: 0;
+            color: #9c27b0; /* Purple */
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #ba68c8; /* Light purple accent */
+        }
+        h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            color: #e91e63; /* Pink */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.1em;
+            font-weight: 300;
+            margin: 20px 0;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #f8bbd9; /* Light pink border */
+        }
+        .gallery img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(186, 104, 200, 0.3); /* Purple shadow */
+        }
+        #slideshow {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid #ba68c8; /* Purple border */
+        }
+        #slideshow img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+        #slideshow img.active {
+            opacity: 1;
+        }
+        footer {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            font-size: 0.9em;
+            color: #666;
+            border-top: 3px solid #9c27b0; /* Purple accent */
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            section {
+                padding: 40px 15px;
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anaeee & Abdi</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Anaya</h2>
+        <p>Hey Anaya! We've been best friends since playgroup in 2015, and now we're in 8th class. You're the most amazing girl ever – creative, kind, and always making me laugh. This site is my way of saying how much our friendship means to me.</p>
+    </section>
+
+    <section id="memories">
+        <h2>Our Memories</h2>
+        <p><strong>Playgroup Days (2015):</strong> Remember When We First Met A Decade Agoo??😜</p>
+        <p><strong>School Adventures:</strong> Remember We Used To Go Safari Park On Trip?😭</p>
+        <p><strong>Class 4:</strong>We All Weree Happy And Onee Day We Got Seperated😭(Worst Dayy!) </p>
+        <p><strong>Class Pree 9th:</strong>We Got A Messagee Of Girls Coming In Our School Praying its Ya'll Rather Than New Students</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Photo Gallery Of Annaeeeeee & Abdii</h2>
+        <div class="gallery">
+            <!-- Static gallery images - replace with your own URLs -->
+            <img src="https://via.placeholder.com/250x250/e91e63/ffffff?text=Memory+1" alt="Memory 1">
+            <img src="https://via.placeholder.com/250x250/ba68c8/ffffff?text=Memory+2" alt="Memory 2">
+            <img src="https://via.placeholder.com/250x250/9c27b0/ffffff?text=Memory+3" alt="Memory 3">
+            <img src="https://via.placeholder.com/250x250/f8bbd9/333333?text=Memory+4" alt="Memory 4">
+        </div>
+        <h2>Slideshow of Us</h2>
+        <div id="slideshow">
+            <img src="https://via.placeholder.com/400x300/e91e63/ffffff?text=Slide+1" alt="Slide 1" class="active">
+            <img src="https://via.placeholder.com/400x300/ba68c8/ffffff?text=Slide+2" alt="Slide 2">
+            <img src="https://via.placeholder.com/400x300/9c27b0/ffffff?text=Slide+3" alt="Slide 3">
+            <img src="https://via.placeholder.com/400x300/9c27b0/ffffff?text=Slide+3" alt="Slide 4">
+        </div>
+    </section>
+
+    <footer>
+        <p>Madee By Abdi! (Thank U For Thee Wrist Band)😜</p>
+    </footer>
+
+    <script>
+        // JavaScript for slideshow
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('#slideshow img');
+        
+        function showSlides() {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+        
+        setInterval(showSlides, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
