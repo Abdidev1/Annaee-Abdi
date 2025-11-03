@@ -6,11 +6,10 @@
     <title>Anaeee & Abdi</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* Modern minimalistic CSS with pink/purple theme */
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #f3e5f5 0%, #fce4ec 100%); /* Subtle pink/purple gradient */
-            color: #4a148c; /* Deep purple for text */
+            background: linear-gradient(135deg, #f3e5f5 0%, #fce4ec 100%);
+            color: #4a148c;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -20,28 +19,27 @@
             padding: 40px 20px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border-bottom: 3px solid #e91e63; /* Pink accent */
+            border-bottom: 3px solid #e91e63;
         }
         h1 {
             font-size: 2.5em;
             font-weight: 300;
             margin: 0;
-            color: #9c27b0; /* Purple */
+            color: #9c27b0;
         }
         section {
             padding: 60px 20px;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 0 auto 20px auto;
             background: #fff;
-            margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            border-left: 5px solid #ba68c8; /* Light purple accent */
+            border-left: 5px solid #ba68c8;
         }
         h2 {
             font-size: 1.8em;
             font-weight: 400;
-            color: #e91e63; /* Pink */
+            color: #e91e63;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -66,12 +64,14 @@
             object-fit: cover;
             border-radius: 8px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 2px solid #f8bbd9; /* Light pink border */
+            border: 2px solid #f8bbd9;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         .gallery img:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(186, 104, 200, 0.3); /* Purple shadow */
+            box-shadow: 0 4px 12px rgba(186, 104, 200, 0.3);
         }
+        /* Slideshow styles */
         #slideshow {
             position: relative;
             width: 100%;
@@ -81,7 +81,7 @@
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border: 2px solid #ba68c8; /* Purple border */
+            border: 2px solid #ba68c8;
         }
         #slideshow img {
             width: 100%;
@@ -94,6 +94,12 @@
         #slideshow img.active {
             opacity: 1;
         }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {font-size: 2em;}
+            section {padding: 40px 15px;}
+            .gallery {grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+        }
         footer {
             background: #fff;
             padding: 20px;
@@ -101,19 +107,7 @@
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
             font-size: 0.9em;
             color: #666;
-            border-top: 3px solid #9c27b0; /* Purple accent */
-        }
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-            section {
-                padding: 40px 15px;
-            }
-            .gallery {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
+            border-top: 3px solid #9c27b0;
         }
     </style>
 </head>
@@ -138,18 +132,17 @@
     <section id="gallery">
        <h2>Photo Gallery Of Annaeeeeee & Abdii</h2>
 <div class="gallery">
-    <!-- Static gallery images - using RAW URLs (these will show images correctly) -->
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/IMG-20250406-WA0011.jpg" alt="Memory 1">
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/WhatsApp%20Image%202025-08-10%20at%202.08.30%20PM.jpeg" alt="Memory 2">
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(527).png" alt="Memory 3">
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(526).png" alt="Memory 4">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/IMG-20250406-WA0011.jpg" alt="Memory 1" onerror="this.src='https://via.placeholder.com/400x250?text=Image+not+found';this.alt='Image missing';">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/WhatsApp%20Image%202025-08-10%20at%202.08.30%20PM.jpeg" alt="Memory 2" onerror="this.src='https://via.placeholder.com/400x250?text=Image+not+found';this.alt='Image missing';">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(527).png" alt="Memory 3" onerror="this.src='https://via.placeholder.com/400x250?text=Image+not+found';this.alt='Image missing';">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(526).png" alt="Memory 4" onerror="this.src='https://via.placeholder.com/400x250?text=Image+not+found';this.alt='Image missing';">
 </div>
 <h2>Slideshow of Us</h2>
 <div id="slideshow">
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(486).png" alt="Slide 1" class="active">
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(482).png" alt="Slide 2">
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(396).png" alt="Slide 3">
-    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(341).png" alt="Slide 4">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(486).png" alt="Slide 1" class="active" onerror="this.src='https://via.placeholder.com/400x300?text=Image+not+found';this.alt='Image missing';">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(482).png" alt="Slide 2" onerror="this.src='https://via.placeholder.com/400x300?text=Image+not+found';this.alt='Image missing';">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(396).png" alt="Slide 3" onerror="this.src='https://via.placeholder.com/400x300?text=Image+not+found';this.alt='Image missing';">
+    <img src="https://raw.githubusercontent.com/Abdidev1/Annaee-Abdi/main/Screenshot%20(341).png" alt="Slide 4" onerror="this.src='https://via.placeholder.com/400x300?text=Image+not+found';this.alt='Image missing';">
 </div>
     </section>
 
@@ -167,10 +160,8 @@
             slideIndex = (slideIndex + 1) % slides.length;
             slides[slideIndex].classList.add('active');
         }
-        
-        setInterval(showSlides, 3000); // Change slide every 3 seconds
+        // Show first slide for 3 seconds before rotating
+        setInterval(showSlides, 3000);
     </script>
 </body>
-
 </html>
-
